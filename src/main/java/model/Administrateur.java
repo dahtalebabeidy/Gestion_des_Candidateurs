@@ -1,13 +1,8 @@
 package model;
 
 public class Administrateur {
-	private String username;
-    private String password;
-
-    public Administrateur() {
-        this.username = "admin";
-        this.password = "admin";
-    }
+	private static String username = "admin";
+    public static String password = "admin";
 
 	public String getUsername() {
 		return username;

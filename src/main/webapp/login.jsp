@@ -26,7 +26,7 @@
 		    margin: 10px;
 		}
 		
-		form input {
+		form input, form button {
 		    border: 1px solid #ddd;
 		    border-radius: 5px;
 		    padding: 10px;
@@ -42,7 +42,7 @@
 		    color: #9d9d9d;
 		}
 		
-		form input[type="submit"] {
+		form input[type="submit"], form button {
 		    border: 1px solid #ddd;
 		    padding: 10px 25px;
 		    font-size: 1.1rem;
@@ -50,9 +50,22 @@
 		    border-radius: 5px;
 		}
 		
-		form input[type="submit"]:hover {
+		form input[type="submit"]:hover, form button:hover {
 		    background-color: #00000f;
 		    color: white;
+		}
+		
+		form button:hover a {
+			color: white;
+		}
+		
+		form button {
+			margin: 0px;
+		}
+		
+		form a {
+		    text-decoration: none;
+		    color: buttontext;
 		}
 
         .error-message {
@@ -76,7 +89,11 @@
 		<div>
 			<input type="submit" value="Login">
 		</div>
-
+		
+		<div>
+			<button><a href="changePassword.jsp">Changer Le mot de passe</a></button>
+		</div>
+			
         <% if (request.getParameter("error") != null) { %>
             <p class="error-message">le nom d'utilisateur ou le mot de passe est invalid.</p>
         <% } %>
