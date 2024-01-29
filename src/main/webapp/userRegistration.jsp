@@ -80,30 +80,26 @@
 	        }
 	    </style>
 	</head>
-<body>
-	<form action="UserLoginServlet" method="post">
-        <h2>Login</h2>
-        <div>
-        	<label for="username">nom d'utilisateur:</label>
-        	<input type="text" id="username" name="username" required>
-        </div>
-        
-        <div>
-        	<label for="password">mot de passe:</label>
-        	<input type="password" id="password" name="password" required>
-        </div>
-
-		<div>
-			<input type="submit" value="Se Conecter">
-		</div>
-		
-		<div>
-			<a href="userRegistration.jsp">Inscrivez-vous
-		</div>
-			
-        <% if (request.getParameter("error") != null) { %>
-            <p class="error-message">le nom d'utilisateur ou le mot de passe est invalid.</p>
-        <% } %>
-    </form>
-</body>
+	<body>
+		<form action="UserRegistrationServlet" method="post">
+	        <h2>Inscrivez-vous</h2>
+	        <div>
+	        	<label for="newUsername">nom d'utilisateur:</label>
+	        	<input type="text" id="newUsername" name="newUsername" required>
+	        </div>
+	        
+	        <div>
+	        	<label for="newPassword">mot de passe:</label>
+	        	<input type="password" id="newPassword" name="newPassword" required>
+	        </div>
+	
+			<div>
+				<input type="submit" value="Enregistrer">
+			</div>
+				
+	        <% if (request.getParameter("error") != null) { %>
+	            <p class="error-message">le nom d'utilisateur ou le mot de passe est invalid.</p>
+	        <% } %>
+	    </form>
+	</body>
 </html>
