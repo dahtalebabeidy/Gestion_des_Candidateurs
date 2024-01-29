@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in d'administrateur</title>
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajouter Un Utilisateur</title>
+<style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -48,7 +47,6 @@
 		    font-size: 1.1rem;
 		    margin: 10px 0;
 		    border-radius: 5px;
-		    cursor: pointer;
 		}
 		
 		form input[type="submit"]:hover, form button:hover {
@@ -75,25 +73,22 @@
     </style>
 </head>
 <body>
-    <form action="LoginServlet" method="post">
-        <h2>Log in</h2>
+    <form action="AddUserServlet" method="post">
+        <h2>Ajouter Un Utilisateur</h2>
         <div>
-        	<label for="username">nom d'utilisateur:</label>
-        	<input type="text" id="username" name="username" required>
+        	<label for="newUsername">nom d'utilisateur:</label>
+        	<input type="text" id="newUsername" name="newUsername" required>
         </div>
         
         <div>
-        	<label for="password">mot de passe:</label>
-        	<input type="password" id="password" name="password" required>
+        	<label for="newPassword">mot de passe:</label>
+        	<input type="password" id="newPassword" name="newPassword" required>
         </div>
 
 		<div>
-			<input type="submit" value="Se Conecter">
+			<input type="submit" value="Ajouter">
 		</div>
-			
-        <% if (request.getParameter("error") != null) { %>
-            <p class="error-message">le nom d'utilisateur ou le mot de passe est invalid.</p>
-        <% } %>
+		
     </form>
 </body>
 </html>

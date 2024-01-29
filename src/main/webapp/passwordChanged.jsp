@@ -5,16 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-		<title>Insert title here</title>
+		<title>Changement du mot de passe avec succes</title>
 		<style>
 	        body {
 	            font-family: Arial, sans-serif;
 	            text-align: center;
 	            margin: 20vh 0;
-	        }
-	
-	        h2 {
-	            color: #4caf50; /* Green color for success messages */
 	        }
 	
 	        p {

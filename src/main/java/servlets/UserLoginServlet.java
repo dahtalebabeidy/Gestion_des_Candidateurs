@@ -5,37 +5,33 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import model.Administrateur;
 import model.User;
 import model.UserManagement;
 
 import java.io.IOException;
-import java.util.List;
 
 /**
- * Servlet implementation class LoginServlet
+ * Servlet implementation class UserLoginServlet
  */
-public class LoginServlet extends HttpServlet {
+public class UserLoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-     
-    public LoginServlet() {
+    
+    public UserLoginServlet() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        Administrateur defaultAdmin = new Administrateur();
+        User user = UserManagement.getUserByUsername(username);
 
-        if (username.equals(defaultAdmin.getUsername()) && password.equals(defaultAdmin.getPassword())) {
-            response.sendRedirect("administrateur.jsp");
-            return;
+        if (user != null && password.equals(user.getPassword())) {
+            response.sendRedirect("user.jsp");
         } else {
-        	response.sendRedirect("login.jsp?error=1");
+            response.sendRedirect("userLogin.jsp?error=1");
         }
-        
-        
 	}
 
 }
