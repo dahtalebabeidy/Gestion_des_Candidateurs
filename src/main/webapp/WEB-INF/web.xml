@@ -59,4 +59,14 @@
     <servlet-name>UserRegistrationServlet</servlet-name>
     <url-pattern>/UserRegistrationServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ExtendAOServlet</display-name>
+    <servlet-name>ExtendAOServlet</servlet-name>
+    <servlet-class>servlets.ExtendAOServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExtendAOServlet</servlet-name>
+    <url-pattern>/ExtendAOServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

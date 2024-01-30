@@ -13,5 +13,8 @@
 	<div>
 			<button><a href="changePassword.jsp">Changer Le mot de passe</a></button>
 	</div>
+	<div>
+			<button><a href="extendAOForm.jsp">Prolonger La date d'un AO</a></button>
+	</div>
 </body>
 </html>
