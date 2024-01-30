@@ -53,7 +53,7 @@ public class SubmissionServlet extends HttpServlet {
 	            // Add the submission to SubmissionManagement
 	            SubmissionManagement.addSubmission(submission);
 	            
-	            System.out.println(submission.getNom());
+	            System.out.println(submission.getMontant());
 
 	            // Redirect to a success page or perform further actions
 	            response.sendRedirect("submissionSuccess.jsp");

@@ -79,4 +79,14 @@
     <servlet-name>SubmissionServlet</servlet-name>
     <url-pattern>/SubmissionServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateFinancialOfferServlet</display-name>
+    <servlet-name>UpdateFinancialOfferServlet</servlet-name>
+    <servlet-class>servlets.UpdateFinancialOfferServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateFinancialOfferServlet</servlet-name>
+    <url-pattern>/UpdateFinancialOfferServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

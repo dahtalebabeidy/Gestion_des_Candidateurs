@@ -13,4 +13,13 @@ public class SubmissionManagement {
     public static List<Submission> getAllSubmissions() {
         return new ArrayList<>(submissionList);
     }
+    
+    public static Submission findSubmission(String aoId, String submitterName) {
+        for (Submission submission : submissionList) {
+            if (submission.getAoId().equals(aoId) && submission.getNom().equals(submitterName)) {
+                return submission;
+            }
+        }
+        return null;
+    }
 }
