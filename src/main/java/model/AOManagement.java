@@ -19,24 +19,34 @@ public class AOManagement {
         }
         return false;
     }
+    
+    public static AO getAOById(String aoId) {
+        for (AO ao : aoList) {
+            if (ao.getId().equals(aoId)) {
+                return ao;
+            }
+        }
+        return null;
+    }
+    
+    public static void setProposalForAO(String aoId, String proposal) {
+        AO ao = getAOById(aoId);
+        if (ao != null) {
+            ao.setProposal(proposal);
+        }
+    }
 
-    // Method to extend AO deadline
     public static void extendAODeadline(String aoId, String newDeadline) {
         for (AO ao : aoList) {
             if (ao.getId().equals(aoId)) {
-                // Update the deadline for the matching AO
                 ao.setDeadline(newDeadline);
                 return;
             }
         }
     }
 
-    // Other methods to add, remove, or retrieve AO data as needed
-
-    // Example method to initialize AO data for testing
     public static void initializeAOData() {
-        aoList.add(new AO("AO001", "2024-02-28"));
-        aoList.add(new AO("AO002", "2024-03-15"));
-        // Add more AO data as needed
+        aoList.add(new AO("AO001", "2024-02-28", "Sample proposal for AO001"));
+        aoList.add(new AO("AO002", "2024-03-15", "Sample proposal for AO002"));
     }
 }
