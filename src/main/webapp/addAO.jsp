@@ -3,9 +3,9 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-		<title>Log in d'utilisateur</title>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Insert title here</title>
 		<style>
 	        body {
 	            font-family: Arial, sans-serif;
@@ -79,24 +79,33 @@
 	            color: red;
 	        }
 	    </style>
-	</head>
-	<body>
-		<form action="UserRegistrationServlet" method="post">
-	        <h2>Inscrivez-vous</h2>
-	        <div>
-	        	<label for="newUsername">nom d'utilisateur:</label>
-	        	<input type="text" id="newUsername" name="newUsername" required>
-	        </div>
-	        
-	        <div>
-	        	<label for="newPassword">mot de passe:</label>
-	        	<input type="password" id="newPassword" name="newPassword" required>
-	        </div>
-	
-			<div>
-				<input type="submit" value="Enregistrer">
-			</div>
+</head>
+<body>
+	<form action="addAO" method="post">
+        <h2>Ajouter Un AO</h2>
+        <div>
+        	<label for="id">AO ID :</label>
+        	<input type="text" id="id" name="id" required>
+        </div>
+        
+        <div>
+        	<label for="proposal">Proposition :</label>
+        	<input type="text" id="proposal" name="proposal" required>
+        </div>
+
+		<div>
+        	<label for="deadline">Date Limite :</label>
+        	<input type="date" id="deadline" name="deadline" required>
+        </div>
+
+		<div>
+			<input type="submit" value="Ajouter">
+		</div>
 			
-	    </form>
-	</body>
+        <% if (request.getParameter("error") != null) { %>
+            <p class="error-message">Entre Un Nouveau AO.</p>
+        <% } %>
+    </form>
+	
+</body>
 </html>

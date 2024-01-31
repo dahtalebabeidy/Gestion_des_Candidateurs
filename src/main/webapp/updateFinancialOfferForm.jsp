@@ -89,7 +89,7 @@
 	        </div>
 	        
 	        <div>
-	        	<label for="submitterName">Nom :</label>
+	        	<label for="submitterName">Nom d'utilisateur :</label>
 	        	<input type="text" name="submitterName" required>
 	        </div>
 	        

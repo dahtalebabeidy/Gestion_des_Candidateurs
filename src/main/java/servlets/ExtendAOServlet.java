@@ -26,8 +26,6 @@ public class ExtendAOServlet extends HttpServlet {
 		String aoId = request.getParameter("aoId");
 	    String newDeadline = request.getParameter("newDeadline");
 	    
-	    AOManagement.initializeAOData();
-
 	    boolean isAOPresent = AOManagement.isAOPresent(aoId);
 
 	    if (isAOPresent) {

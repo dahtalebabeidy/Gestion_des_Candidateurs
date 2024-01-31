@@ -22,4 +22,15 @@ public class SubmissionManagement {
         }
         return null;
     }
+    
+    public static List<Submission> getSubmissionsByUser(String username) {
+        List<Submission> userSubmissions = new ArrayList<>();
+        for (Submission submission : submissionList) {
+            // Assuming User class has a getUsername method
+            if (submission.getNom().equals(username)) {
+                userSubmissions.add(submission);
+            }
+        }
+        return userSubmissions;
+    }
 }

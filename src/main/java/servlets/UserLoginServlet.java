@@ -18,8 +18,9 @@ public class UserLoginServlet extends HttpServlet {
     
     public UserLoginServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
+    
+    public static String u = "";
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String username = request.getParameter("username");
@@ -28,6 +29,8 @@ public class UserLoginServlet extends HttpServlet {
         User user = UserManagement.getUserByUsername(username);
 
         if (user != null && password.equals(user.getPassword())) {
+        	u = username;
+        	System.out.println(u);
             response.sendRedirect("user.jsp");
         } else {
             response.sendRedirect("userLogin.jsp?error=1");

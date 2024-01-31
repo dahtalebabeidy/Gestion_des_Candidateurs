@@ -86,7 +86,7 @@
         
         <div>
         	<label for="newDeadline">Nouveau date limite :</label>
-        	<input type="text" id="newDeadline" name="newDeadline" required>
+        	<input type="date" id="newDeadline" name="newDeadline" required>
         </div>
 
 		<div>

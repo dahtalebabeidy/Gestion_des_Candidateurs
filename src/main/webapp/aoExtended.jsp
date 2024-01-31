@@ -22,7 +22,7 @@
 	<p>La date limite a ete prolonger avec succes.</p>
 	<script>
 		        setTimeout(function() {
-		            window.location.href = "userLogin.jsp";
+		            window.location.href = "administrateur.jsp";
 		        }, 1500);
 	</script>
 </body>

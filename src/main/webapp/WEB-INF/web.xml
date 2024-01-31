@@ -89,4 +89,32 @@
     <servlet-name>UpdateFinancialOfferServlet</servlet-name>
     <url-pattern>/UpdateFinancialOfferServlet</url-pattern>
   </servlet-mapping>
+  <filter>
+    <display-name>LoginFilter</display-name>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/login.jsp</url-pattern>
+  </filter-mapping>
+  <filter>
+    <display-name>UserLoginFilter</display-name>
+    <filter-name>UserLoginFilter</filter-name>
+    <filter-class>filter.UserLoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>UserLoginFilter</filter-name>
+    <url-pattern>/userlogin.jsp</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>addAO</display-name>
+    <servlet-name>addAO</servlet-name>
+    <servlet-class>servlets.addAO</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addAO</servlet-name>
+    <url-pattern>/addAO</url-pattern>
+  </servlet-mapping>
 </web-app>

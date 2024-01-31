@@ -9,6 +9,10 @@ public class AOManagement {
 	public static List<AO> getAllAOs() {
         return aoList;
     }
+	
+	public static void addAO(AO ao) {
+        aoList.add(ao);
+    }
 
     // Method to check if AO with a given ID exists
     public static boolean isAOPresent(String aoId) {

@@ -94,7 +94,7 @@
 	        </div>
 	        
 	        <div>
-	        	<label for="nom">Nom :</label>
+	        	<label for="nom">Nom d'utilisateur :</label>
 	        	<input type="text" name="nom" required>
 	        </div>
 	        
@@ -137,7 +137,7 @@
 	        
 	        <div>
 	        	<label for="dateRealisation">Date de réalisation :</label>
-	        	<input type="text" name="dateRealisation" required>
+	        	<input type="date" name="dateRealisation" required>
 	        </div>
 	
 			<div>

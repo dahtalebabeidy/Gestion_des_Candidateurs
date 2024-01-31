@@ -76,7 +76,7 @@
         	<input type="password" id="newPassword" name="newPassword" required>
         </div>
         
-        <input type="submit" value="Change Password">
+        <input type="submit" value="Enregistrer">
         
         <% if (request.getParameter("error") != null) { %>
             <p class="error-message">L'ancien mot de passe n'est pas valide</p>
