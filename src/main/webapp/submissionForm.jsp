@@ -145,7 +145,7 @@
 			</div>
 				
 	        <% if (request.getParameter("error") != null) { %>
-	            <p class="error-message">Vous devez saisir un AO existe.</p>
+	            <p class="error-message">Vous devez saisir votre correct nom d'utilisateur et un AO existe.</p>
 	        <% } %>
 	    </form>
 	</body>

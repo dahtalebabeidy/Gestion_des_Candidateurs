@@ -15,6 +15,7 @@ import java.util.List;
 /**
  * Servlet implementation class LoginServlet
  */
+
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
      
@@ -34,8 +35,5 @@ public class LoginServlet extends HttpServlet {
         } else {
         	response.sendRedirect("login.jsp?error=1");
         }
-        
-        
 	}
-
 }

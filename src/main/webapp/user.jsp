@@ -87,6 +87,7 @@
 	<div class="dashboard-container">
 	    <button class="dashboard-button"><a href="submissionForm.jsp">Somettre Un Offre</a></button>
 	    <button class="dashboard-button"><a href="updateFinancialOfferForm.jsp">Modifier Votre Offre Financier</a></button>
+	    <button class="dashboard-button"><a href="userLogin.jsp">Se Deconecter</a></button>
 	</div>
 	
 	<div class="container">

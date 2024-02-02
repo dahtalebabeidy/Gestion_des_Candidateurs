@@ -82,6 +82,7 @@
 	    <button class="dashboard-button"><a href="addUser.jsp">Ajouter Un utilisateur</a></button>
 	    <button class="dashboard-button"><a href="addAO.jsp">Ajouter Un AO</a></button>
 	    <button class="dashboard-button"><a href="extendAOForm.jsp">Prolonger La date d'un AO</a></button>
+	    <button class="dashboard-button"><a href="login.jsp">Se Deconecter</a></button>
 	</div>
 	
 	<div class="container">

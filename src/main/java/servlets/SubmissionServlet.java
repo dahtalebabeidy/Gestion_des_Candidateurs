@@ -18,15 +18,15 @@ public class SubmissionServlet extends HttpServlet {
     
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String aoId = request.getParameter("aoId");
+		String nom = request.getParameter("nom");
 		
 	    boolean isAOPresent = AOManagement.isAOPresent(aoId);
 
-	    if (isAOPresent) {
+	    if (isAOPresent && nom.equals(UserLoginServlet.u)) {
 	        AO ao = AOManagement.getAOById(aoId);
 	        boolean hasProposal = ao != null && ao.getProposal() != null;
 
 	        if (hasProposal) {
-	            String nom = request.getParameter("nom");
 	            String adresse = request.getParameter("adresse");
 	            String tel = request.getParameter("tel");
 	            double montant = Double.parseDouble(request.getParameter("montant"));

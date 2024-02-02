@@ -82,7 +82,7 @@
 	</head>
 <body>
 	<form action="UserLoginServlet" method="post">
-        <h2>Login</h2>
+        <h2>Se Connecter</h2>
         <div>
         	<label for="username">nom d'utilisateur:</label>
         	<input type="text" id="username" name="username" required>
