@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-		<title>Somettre Un Offre</title>
+		<title>Somettre Une Offre</title>
 		<style>
 	        body {
 	            font-family: Arial, sans-serif;
@@ -82,7 +82,7 @@
 	</head>
 	<body>
 		<form action="SubmissionServlet" method="post">
-	        <h2>Somettre Un Offre</h2>
+	        <h2>Somettre Une Offre</h2>
 	        <div>
 	        	<label for="aoId">AO ID :</label>
 	        	<input type="text" name="aoId" required>
@@ -118,7 +118,7 @@
 	        	<input type="text" name="dateSoumission" required>
 	        </div>
 	
-			<p>Références:</p>
+			<p>RÃ©fÃ©rences:</p>
 			
 			<div>
 	        	<label for="nomProjet">Nom du projet :</label>
@@ -131,12 +131,12 @@
 	        </div>
 	        
 	        <div>
-	        	<label for="montantReference">Montant (référence) :</label>
+	        	<label for="montantReference">Montant (rÃ©fÃ©rence) :</label>
 	        	<input type="number" name="montantReference" required>
 	        </div>
 	        
 	        <div>
-	        	<label for="dateRealisation">Date de réalisation :</label>
+	        	<label for="dateRealisation">Date de rÃ©alisation :</label>
 	        	<input type="date" name="dateRealisation" required>
 	        </div>
 	
