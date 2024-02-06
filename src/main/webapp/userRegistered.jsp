@@ -19,7 +19,7 @@
 		    </style>
 		</head>
 	<body>
-	    <p>Vous Avez Inscrit Avec Succes.</p>
+	    <p>Votre inscription a été réalisée avec succès.</p>
 	    <script>
 		        setTimeout(function() {
 		            window.location.href = "userLogin.jsp";
